@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\AboutCOntroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BiztroxController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\SejarahController;
+use App\Models\SejarahModels;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,4 +42,12 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/edit-blog/{id}', [BlogController::class,'edit'])->name('blog.edit');
     Route::post('/update-blog/{id}', [BlogController::class,'update'])->name('blog.update');
     Route::get('/dalete-blog/{id}', [BlogController::class,'delete'])->name('blog.delete');
+
+    Route::get('/manage-sejarah', [SejarahController::class,'manage'])->name('sejarah.manage');
+    Route::get('/edit-sejarah/{id}', [SejarahController::class,'edit'])->name('sejarah.edit');
+    Route::post('/update-sejarah/{id}', [SejarahController::class,'update'])->name('sejarah.update');
+
+    Route::get('/manage-about', [AboutCOntroller::class,'manage'])->name('about.manage');
+    Route::get('/edit-about/{id}', [AboutCOntroller::class,'edit'])->name('about.edit');
+    Route::post('/update-about/{id}', [AboutCOntroller::class,'update'])->name('about.update');
 });

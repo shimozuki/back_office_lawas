@@ -120,8 +120,8 @@
                     
                     <li><a href="{{route('category.manage')}}"><i class="bx bx-layout"></i>Manage Category</a></li>
                     <li><a href="{{route('blog.manage')}}"> <i class="bx bx-book"></i>Manage Lawas</a></li>
-                    <li><a href="#"> <i class="bx bx-archive"></i>Manage Sejarah</a></li>
-                    <li><a href="#"> <i class="bx bx-message"></i>Manage About</a></li>
+                    <li><a href="{{route('sejarah.manage')}}"> <i class="bx bx-archive"></i>Manage Sejarah</a></li>
+                    <li><a href="{{route('about.manage')}}"> <i class="bx bx-message"></i>Manage About</a></li>
                     <!-- <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="bx bx-layout"></i>

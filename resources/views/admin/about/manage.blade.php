@@ -19,12 +19,12 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($sejarah as $row)
+                            @foreach($about as $row)
                                 <tr>
                                     <th scope="row">{{$loop->iteration}}</th>
                                     <td>{{$row->description}}</td>
                                     <td>
-                                        <a href="{{route('sejarah.edit',['id'=>$row->id])}}" class="btn btn-success btn-sm">
+                                        <a href="{{route('about.edit',['id'=>$row->id])}}" class="btn btn-success btn-sm">
                                             <i class="fa fa-edit"></i>
                                         </a>
                                     </td>

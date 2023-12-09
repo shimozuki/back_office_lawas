@@ -27,21 +27,21 @@
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label for="horizontal-firstname-input2" class="col-sm-3 col-form-label">Pengarang</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="sub_title" id="horizontal-firstname-input2"/>
-                            </div>
-                        </div>
-                        <div class="form-group row mb-4">
                             <label for="horizontal-email-input" class="col-sm-3 col-form-label">Link Video</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="short_description" id="horizontal-email-input"></textarea>
+                                <input type="text" class="form-control" name="link_yt" id="horizontal-firstname-input2"/>
                             </div>
                         </div>
                         <div class="form-group row mb-4">
-                            <label for="horizontal-email-input4" class="col-sm-3 col-form-label">Lirik</label>
+                            <label for="horizontal-email-input4" class="col-sm-3 col-form-label">Lirik Sumbawa</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control summernote" name="long_description" id="horizontal-email-input4"></textarea>
+                                <textarea class="form-control summernote" name="lirik_swq" id="horizontal-email-input4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-4">
+                            <label for="horizontal-firstname-input2" class="col-sm-3 col-form-label">Lirik Indonesia</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control summernote" name="lirik_indo" id="horizontal-email-input4"></textarea>
                             </div>
                         </div>
                         <div class="form-group row mb-4">

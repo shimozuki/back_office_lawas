@@ -21,27 +21,27 @@
                         </div>
                     </div>
                     <div class="form-group row mb-4">
-                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Main Title</label>
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Judul Lawas</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" value="{{ $blog->main_title }}" name="main_title" id="horizontal-firstname-input">
                         </div>
                     </div>
                     <div class="form-group row mb-4">
-                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Pencipta</label>
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Link Video</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" value="{{ $blog->sub_title }}" name="sub_title" id="horizontal-firstname-input">
+                            <input type="text" class="form-control" value="{{ $blog->link_yt }}" name="link_yt" id="horizontal-firstname-input">
                         </div>
                     </div>
                     <div class="form-group row mb-4">
-                        <label for="horizontal-email-input" class="col-sm-3 col-form-label">Link</label>
+                        <label for="horizontal-email-input" class="col-sm-3 col-form-label">Lirik Sumbawa<</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" value="{{ $blog->sub_title }}" name="short_description" id="horizontal-firstname-input" value="{{ $blog->short_description }}">
+                            <textarea class="form-control summernote" name="lirik_swq" id="horizontal-email-input">{{ $blog->lirik_swq }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row mb-4">
-                        <label for="horizontal-email-input" class="col-sm-3 col-form-label">Long Description</label>
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Lirik Indonesia</label>
                         <div class="col-sm-9">
-                            <textarea class="form-control summernote" name="long_description" id="horizontal-email-input">{{ $blog->long_description }}</textarea>
+                        <textarea class="form-control summernote" name="lirik_indo" id="horizontal-email-input">{{ $blog->lirik_indo }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row mb-4">

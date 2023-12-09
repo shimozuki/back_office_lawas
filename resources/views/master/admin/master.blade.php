@@ -117,18 +117,23 @@
                         </a>
 
                     </li>
-
-                    <li>
+                    
+                    <li><a href="{{route('category.manage')}}"><i class="bx bx-layout"></i>Manage Category</a></li>
+                    <li><a href="{{route('blog.manage')}}"> <i class="bx bx-book"></i>Manage Lawas</a></li>
+                    <li><a href="#"> <i class="bx bx-archive"></i>Manage Sejarah</a></li>
+                    <li><a href="#"> <i class="bx bx-message"></i>Manage About</a></li>
+                    <!-- <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="bx bx-layout"></i>
                             <span>Category Module</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="{{route('category.add')}}">Add Category</a></li>
-                            <li><a href="{{route('category.manage')}}">Manage Category</a></li>
+                           
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                   
+                    <!-- <li>
                         <a href="javascript: void(0);" class="has-arrow waves-effect">
                             <i class="bx bx-store"></i>
                             <span>Lawas Module</span>
@@ -137,7 +142,7 @@
                             <li><a href="{{route('blog.add')}}">Add Lawas</a></li>
                             <li><a href="{{route('blog.manage')}}">Manage Lawas</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- Sidebar -->

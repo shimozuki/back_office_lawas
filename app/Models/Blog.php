@@ -40,9 +40,9 @@ class Blog extends Model
         self::$blog->category_id = $request->category_id;
         self::$blog->author_id = Auth::user()->id;
         self::$blog->main_title = $request->main_title;
-        self::$blog->sub_title = $request->sub_title;
-        self::$blog->short_description = $request->short_description;
-        self::$blog->long_description = $request->long_description;
+        self::$blog->lirik_indo = strip_tags($request->lirik_indo);
+        self::$blog->link_yt = $request->link_yt;
+        self::$blog->lirik_swq = strip_tags($request->lirik_swq);
         self::$blog->image = self::getImageURL($request);
         self::$blog->audio = self::getAudioURL($request);
         self::$blog->save();
@@ -81,9 +81,9 @@ class Blog extends Model
       
         self::$blog->author_id = Auth::user()->id;
         self::$blog->main_title = $request->main_title;
-        self::$blog->sub_title = $request->sub_title;
-        self::$blog->short_description = $request->short_description;
-        self::$blog->long_description = $request->long_description;
+        self::$blog->lirik_indo = strip_tags($request->lirik_indo);
+        self::$blog->link_yt = $request->link_yt;
+        self::$blog->lirik_swq = strip_tags($request->lirik_swq);
         self::$blog->image =self::$imageUrl;
         self::$blog->status = $request->status;
         self::$blog->save();

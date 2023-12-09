@@ -27,6 +27,7 @@ class Category extends Model
     {
         self::$category= new Category();
         self::$category->name  =$request->name;
+        self::$category->deskription =strip_tags($request->deskription);	
         self::$category->save();
 
     }
@@ -34,6 +35,7 @@ class Category extends Model
     {
         self::$category =Category::find($id);
         self::$category->name  =$request->name;
+        self::$category->deskription =strip_tags($request->deskription);
         self::$category->save();
     }
 }

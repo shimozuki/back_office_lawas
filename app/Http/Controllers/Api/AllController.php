@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Blog;
+use App\Models\About;
+use App\Models\SejarahModels;
 
 class AllController extends Controller
 {
@@ -35,6 +37,50 @@ class AllController extends Controller
         $id = $request->id;
 
         $data = Blog::find($id);
+
+        if (!empty($data)) {
+            $response = [
+                'status' => 200,
+                'error' => false,
+                'message' => 'Success get data',
+                'data' => $data
+            ];
+        }else {
+            $response = [
+                'status' => 500,
+                'error' => true,
+                'message' => 'No Entry Data',
+                'data' => []
+            ];
+        }
+        return response()->json($response);
+    }
+
+    public function getAbout()
+    {
+        $data = About::all();
+        if (!empty($data)) {
+            $response = [
+                'status' => 200,
+                'error' => false,
+                'message' => 'Success get data',
+                'data' => $data
+            ];
+        }else {
+            $response = [
+                'status' => 500,
+                'error' => true,
+                'message' => 'No Entry Data',
+                'data' => []
+            ];
+        }
+        return response()->json($response);
+
+    }
+
+    public function getSejarah()
+    {
+        $data = SejarahModels::all();
 
         if (!empty($data)) {
             $response = [

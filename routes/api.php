@@ -21,3 +21,5 @@ use App\Http\Controllers\Api\AllController;
 
 Route::get('/get-all', [AllController::class, 'index']);
 Route::post('/get-byid', [AllController::class, 'getbyID']);
+Route::get('/getAbout', [AllController::class, 'getAbout']);
+Route::get('/getSejarah', [AllController::class, 'getSejarah']);
